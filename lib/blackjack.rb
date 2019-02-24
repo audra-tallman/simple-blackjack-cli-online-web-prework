@@ -20,7 +20,11 @@ def prompt_user
   puts "Type 'h' to hit or 's' to stay"
 end
 
-
+def initial_round
+  card_sum = deal_card += deal_card
+  display_card_total(card_sum)
+  print card_sum
+end
 
 def get_user_input
   gets.chomp
