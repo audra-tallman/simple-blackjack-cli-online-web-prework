@@ -21,9 +21,9 @@ def prompt_user
 end
 
 def initial_round
-  card_sum = deal_card += deal_card
-  display_card_total(card_sum)
-  print card_sum
+  first_round = deal_card + deal_card
+  display_card_total(first_round)
+  return first_round
 end
 
 def get_user_input
