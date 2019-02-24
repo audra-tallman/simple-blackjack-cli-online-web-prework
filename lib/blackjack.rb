@@ -34,25 +34,18 @@ def end_game(card_total)
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
-
-
-def hit?(number)
+def hit?(card_total)
   prompt_user
-  get_user_input
-  puts display_card_total
-  if get_user_input == 's'
-  puts display_card_total
-  
-  elsif get_user_input == 'h'
-  deal_card += 1
-  puts deal_card
-  
-  else
+  input = get_user_input
+  until input == 'h' || input == 's'
     invalid_command
     prompt_user
+    input = get_user_input
   end
-  puts card_total
-  # code hit? here
+  if input == 'h'
+    card_total += deal_card
+  elsif input == 's'
+    card_total
 end
 
 def invalid_command
