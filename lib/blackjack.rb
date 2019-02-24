@@ -59,6 +59,12 @@ end
 #####################################################
 
 def runner
+  welcome
+  initial_round
+  hit
+  display
+  until card_total >21
+  end_game
   # code runner here
 end
     
