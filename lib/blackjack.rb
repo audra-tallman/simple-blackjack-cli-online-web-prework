@@ -65,6 +65,5 @@ def runner
   display
   until card_total >21
   end_game
-  # code runner here
 end
     
